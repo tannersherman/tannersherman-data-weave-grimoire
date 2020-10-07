@@ -10,7 +10,7 @@ import raml!playground::api::dwplayground as PlaygroundAPI
 import run, ReaderInput,RunSuccess,ExecutionFailure from dw::Runtime
 import dw::core::Binaries
 
-var port = port as Number
+var port = payload as Number
 var serverConfig: {host: String, port: Number} = { host: "localhost", port: port }
 
 fun runTransform(transformRequest: PlaygroundAPI::TransformRequest): PlaygroundAPI::TransformResponse = do {
